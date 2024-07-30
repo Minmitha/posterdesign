@@ -1,0 +1,129 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title {
+    padding: 15px;
+    font-family: sans-serif;
+    height: 10%;
+
+}
+
+.content {
+    width: 500px;
+    height: 400px;
+    background-color: #f1ecedfc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.name {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .button {
+     position: relative;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+     background-color: #ef1313;
+     color: white;
+     border: none;
+     border-radius: 5px;
+ }
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fa121e;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.inner-content {
+    padding: 15px;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+.button.icon {
+    margin-right: 10px;
+}
+
+.button.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.notification {
+     /* circle shape, size and position */
+     position: absolute;
+     right: -0.7em;
+     top: -0.7em;
+     min-width: 1.6em;
+     /* or width, explained below. */
+     height: 1.6em;
+     border-radius: 0.8em;
+     /* or 50%, explained below. */
+     border: 0.05em solid white;
+     background-color: rgb(19, 17, 17);
+
+     /* number size and position */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 0.8em;
+     color: white;
+ }
+
+/* .flex-container{
+    display: flex;
+} */
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
